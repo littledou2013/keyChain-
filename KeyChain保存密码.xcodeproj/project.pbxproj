@@ -13,6 +13,9 @@
 		A8CBFD7720E22BF70060CA87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8CBFD7620E22BF70060CA87 /* Assets.xcassets */; };
 		A8CBFD7A20E22BF70060CA87 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8CBFD7820E22BF70060CA87 /* LaunchScreen.storyboard */; };
 		A8CBFD7D20E22BF70060CA87 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A8CBFD7C20E22BF70060CA87 /* main.m */; };
+		A8CBFD8820E22D190060CA87 /* SSKeychainQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = A8CBFD8520E22D180060CA87 /* SSKeychainQuery.m */; };
+		A8CBFD8920E22D190060CA87 /* SSKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = A8CBFD8720E22D190060CA87 /* SSKeychain.m */; };
+		A8CBFD8B20E22D260060CA87 /* SSKeychain.strings in Resources */ = {isa = PBXBuildFile; fileRef = A8CBFD8A20E22D260060CA87 /* SSKeychain.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,11 @@
 		A8CBFD7920E22BF70060CA87 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A8CBFD7B20E22BF70060CA87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A8CBFD7C20E22BF70060CA87 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A8CBFD8420E22D180060CA87 /* SSKeychainQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSKeychainQuery.h; sourceTree = "<group>"; };
+		A8CBFD8520E22D180060CA87 /* SSKeychainQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSKeychainQuery.m; sourceTree = "<group>"; };
+		A8CBFD8620E22D180060CA87 /* SSKeychain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSKeychain.h; sourceTree = "<group>"; };
+		A8CBFD8720E22D190060CA87 /* SSKeychain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSKeychain.m; sourceTree = "<group>"; };
+		A8CBFD8A20E22D260060CA87 /* SSKeychain.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = SSKeychain.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +66,7 @@
 		A8CBFD6C20E22BF50060CA87 /* KeyChain保存密码 */ = {
 			isa = PBXGroup;
 			children = (
+				A8CBFD8320E22CEA0060CA87 /* SSKeyChain */,
 				A8CBFD6D20E22BF50060CA87 /* AppDelegate.h */,
 				A8CBFD6E20E22BF50060CA87 /* AppDelegate.m */,
 				A8CBFD7020E22BF50060CA87 /* ViewController.h */,
@@ -69,6 +78,18 @@
 				A8CBFD7C20E22BF70060CA87 /* main.m */,
 			);
 			path = "KeyChain保存密码";
+			sourceTree = "<group>";
+		};
+		A8CBFD8320E22CEA0060CA87 /* SSKeyChain */ = {
+			isa = PBXGroup;
+			children = (
+				A8CBFD8A20E22D260060CA87 /* SSKeychain.strings */,
+				A8CBFD8620E22D180060CA87 /* SSKeychain.h */,
+				A8CBFD8720E22D190060CA87 /* SSKeychain.m */,
+				A8CBFD8420E22D180060CA87 /* SSKeychainQuery.h */,
+				A8CBFD8520E22D180060CA87 /* SSKeychainQuery.m */,
+			);
+			path = SSKeyChain;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,6 +149,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8CBFD8B20E22D260060CA87 /* SSKeychain.strings in Resources */,
 				A8CBFD7A20E22BF70060CA87 /* LaunchScreen.storyboard in Resources */,
 				A8CBFD7720E22BF70060CA87 /* Assets.xcassets in Resources */,
 				A8CBFD7520E22BF50060CA87 /* Main.storyboard in Resources */,
@@ -141,9 +163,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8CBFD8820E22D190060CA87 /* SSKeychainQuery.m in Sources */,
 				A8CBFD7220E22BF50060CA87 /* ViewController.m in Sources */,
 				A8CBFD7D20E22BF70060CA87 /* main.m in Sources */,
 				A8CBFD6F20E22BF50060CA87 /* AppDelegate.m in Sources */,
+				A8CBFD8920E22D190060CA87 /* SSKeychain.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
