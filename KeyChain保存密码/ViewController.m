@@ -53,7 +53,7 @@
     /**
      *  参数
      *  1. 密码明文
-     *  2. 服务,可以随便写,但是他是APP的一个标识,建议用BundleID
+     *  2. 服务,符合和账号一起来唯一的表示一个密码
      *  3. 账号,用户名
      */
     [SSKeychain setPassword:pwd forService:LDLoginServiceName account:accunt];
